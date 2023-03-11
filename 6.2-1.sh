@@ -28,7 +28,7 @@ rmmod nouveau
 
 # Install NVidia drivers
 LATEST_DRIVER=$(wget -qLO - https://download.nvidia.com/XFree86/Linux-x86_64/latest.txt | awk '{print $2}')
-LATEST_DRIVER_URL="https://download.nvidia.com/XFree86/Linux-x86_64/${LATEST_DRIVER}"
+LATEST_DRIVER_URL="https://download.nvidia.com/XFree86/Linux-x86_64/470.161.03/NVIDIA-Linux-x86_64-470.161.03.run"
 INSTALL_SCRIPT=$(basename $LATEST_DRIVER_URL)
 wget -qLO $INSTALL_SCRIPT $LATEST_DRIVER_URL
 bash $INSTALL_SCRIPT --silent
