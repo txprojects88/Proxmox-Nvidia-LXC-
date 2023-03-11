@@ -58,7 +58,6 @@ export PCT_OPTIONS="
   -memory 4096
   -features nesting=1
   -net0 name=eth0,bridge=vmbr0,ip=dhcp
-  -unprivileged 0
 "
 bash -c "$(wget -qLO - https://raw.githubusercontent.com/Saberwolf64/Proxmox-Nvidia-LXC-/proxmox-6.2-1-ubunutu-contributor-Whiskerz007/LXC_create.sh)"
 
