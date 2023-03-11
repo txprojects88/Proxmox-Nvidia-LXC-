@@ -85,5 +85,4 @@ lxc-attach -n $CTID -- bash -c 'wget -q https://downloads.plex.tv/plex-keys/Plex
 lxc-attach -n $CTID -- bash -c 'echo "deb https://downloads.plex.tv/repo/deb/ public main" > /etc/apt/sources.list.d/plexmediaserver.list'
 lxc-attach -n $CTID -- apt update
 lxc-attach -n $CTID -- apt -y upgrade
-lxc-attach -n $CTID -- apt -y install nvtop 
 lxc-attach -n $CTID -- apt-get -y -o Dpkg::Options::="--force-confnew" install plexmediaserver
